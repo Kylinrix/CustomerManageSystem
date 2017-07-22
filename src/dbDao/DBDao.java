@@ -13,8 +13,8 @@ import java.sql.SQLException;
 public class DBDao {
 	public static final String url = "jdbc:mysql://127.0.0.1/datamanage?useUnicode=true&characterEncoding=utf-8&useSSL=false";  
     public static final String name = "com.mysql.jdbc.Driver";  
-    public static final String user = "root";  
-    public static final String password = "lky12580";  
+    public static final String user = "darin";  
+    public static final String password = "qwertyuiop";  
     
     public ResultSet ret=null;
     public Connection conn = null;  

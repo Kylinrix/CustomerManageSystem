@@ -6,13 +6,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<link rel="stylesheet" type="text/css" href="css/mainPageCss.css"/>
+<link rel="stylesheet" type="text/css" href="css/pageCss.css"/>
 <title>Insert title here</title>
 </head>
 <body>
  <c:import url="top.jsp"></c:import> 
 <h3>${msg}</h3>
-    <table id="allcustomer"  align="center">
+    <table align="center">
     <thead> 
     	<tr>
     	<th colspan="7">客户列表</th>
@@ -36,12 +36,12 @@
             <td>${cust.email}</td>
             <td>${cust.description}</td>
             <td>
-                <a href="<c:url value='/CustomerServlet?&method=doGet&submitType=sendCustomerToEdit&id=${cust.id}&name=${cust.name}&phone=${cust.phone}&email=${cust.email}&description=${cust.description}'/> ">编辑</a>
+                <a href="<c:url value='/CustomerServlet?&method=doGet&submitType=sendCustomerToEdit&id=${cust.id}'/> ">编辑</a>
                 <a href="<c:url value='/CustomerServlet?method=doGet&submitType=deleteCustomer&id=${cust.id}'/> ">删除</a>
             </td>
         </tr>
         </c:forEach>
     </table>
-  
+   <c:import url="footer.jsp"></c:import> 
 </body>
 </html>

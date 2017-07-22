@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"  pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <html>
@@ -10,6 +9,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+ <c:import url="top.jsp"></c:import> 
 <div class="basic-grey">
 <form action="<c:url value='/CustomerServlet'/>" method="post" >
 <h1>客户添加
@@ -24,8 +24,8 @@
 <label>
 <span>性别:</span>
 <select name="sex">
-<option value="male">男</option>
-<option value="female">女</option>
+<option value="男">男</option>
+<option value="女">女</option>
 </select>
 </label>
 
@@ -55,5 +55,7 @@
 
 </form>
 </div>
+
+<c:import url="footer.jsp"></c:import> 
 </body>
 </html>

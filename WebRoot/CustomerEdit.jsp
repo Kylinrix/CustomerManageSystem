@@ -9,39 +9,40 @@
 <link rel="stylesheet" type="text/css" href="css/pageCss.css"/>
 </head>
 <body>
+ <c:import url="top.jsp"></c:import> 
 <div class="basic-grey">
-	<form action="<c:url value='/CustomerServlet'/>" method="post" >
+	<form action="<c:url value='/customerEditEditServlet'/>" method="post" >
 	<h1 align="center">编辑客户
 	<span>请填写下列内容</span>
 	</h1>
 	<label>
 	<span>客户ID</span>
-	<input id="name" type="text" name="id" required="required" placeholder="请输入您想修改的客户ID"   value="${customer.id}"  />
+	<input id="name" type="text" name="id" required="required" placeholder="请输入您想修改的客户ID"   value="${customerEdit.id}"  />
 		</label>
 
 	</h1>
 	<label>
 	<span>姓名 :</span>
-	<input id="name" type="text" name="name" required="required" placeholder="请输入姓名" value="${customer.name}"   />
+	<input id="name" type="text" name="name" required="required" placeholder="请输入姓名" value="${customerEdit.name}"   />
 	</label>
 	<label>
 	<span>性别 :</span><select name="sex">
-	<option value="male">男</option>
-	<option value="female">女</option>
+	<option value="男">男</option>
+	<option value="女">女</option>
 	</select>
 	</label>
 	<label>
 	<span>电话 :</span>
-	<input id="phone" type="text" name="phone" required="required" placeholder="请输入电话号码" value="${customer.phone}" />
+	<input id="phone" type="text" name="phone" required="required" placeholder="请输入电话号码" value="${customerEdit.phone}" />
 		</label>
 
 	<label>
 	<span>邮箱 :</span>
-	<input id="email" type="email" name="email" required="required" placeholder="请输入邮箱地址" value="${customer.email}"  />
+	<input id="email" type="email" name="email" required="required" placeholder="请输入邮箱地址" value="${customerEdit.email}"  />
 	</label>
 	<label>
 	<span>描述详情 :</span>
-	<textarea id="message" name="description" placeholder="请输入客户描述">${customer.description} </textarea>
+	<textarea id="message" name="description" placeholder="请输入客户描述">${customerEdit.description} </textarea>
 	</label>
 	
 	<input type="hidden" name="submitType" value="updateCustomer"></input>
@@ -49,8 +50,9 @@
 	<span>&nbsp;</span>
 	<button type="submit" class="button"  value="Send" >Submit</button>
 	</label>
+	
 	</form>
 </div>
-
+<c:import url="footer.jsp"></c:import> 
 </body>
 </html>
