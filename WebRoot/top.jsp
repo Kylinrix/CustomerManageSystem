@@ -17,7 +17,7 @@
 <li><a href="CustomerEdit.jsp">编辑客户</a></li>
 <li> <a href="<c:url value='/CustomerServlet?method=doGet&submitType=showAllCustomer'/>">查询客户</a></li>
 <li><a href="advancedSearchCustomer.jsp">搜索客户</a></li>
-<li><a href="welcome.jsp">关于</a></li>
+<li><a href="about.jsp">关于</a></li>
 </ul> 
 
 </body>
