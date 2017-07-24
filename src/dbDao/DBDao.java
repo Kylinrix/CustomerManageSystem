@@ -11,6 +11,8 @@ import java.sql.SQLException;
 
 
 public class DBDao {
+	
+	//此处设置连接选项
 	public static final String url = "jdbc:mysql://127.0.0.1/datamanage?useUnicode=true&characterEncoding=utf-8&useSSL=false";  
     public static final String name = "com.mysql.jdbc.Driver";  
     public static final String user = "darin";  

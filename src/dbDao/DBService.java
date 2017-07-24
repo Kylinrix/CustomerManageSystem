@@ -108,7 +108,7 @@ public class DBService {
 	public ArrayList<CustomerBean> advancedSearchCustomer(CustomerBean customer) throws SQLException{
 		dbconnect.init();
 		
-		//
+		//三个键值的选择(可以为空)
 		if(
 				(customer.getName().isEmpty())&&
 				(customer.getPhone().isEmpty())&&
